@@ -1,0 +1,171 @@
+Ubuntu 14.\+04
+
+\href{https://travis-ci.org/PRBonn/depth_clustering}{\tt } \href{https://www.codacy.com/project/zabugr/depth_clustering/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=PRBonn/depth_clustering&amp;utm_campaign=Badge_Grade_Dashboard}{\tt } \href{https://coveralls.io/github/PRBonn/depth_clustering}{\tt }
+
+This is a fast and robust algorithm to segment point clouds taken with Velodyne sensor into objects. It works with all available Velodyne sensors, i.\+e. 16, 32 and 64 beam ones.
+
+Check out a video that shows all objects outlined in orange\+: \href{https://www.youtube.com/watch?v=UXHX9kFGXfg}{\tt html doc/pics/depth\+\_\+clustering\+\_\+new\+\_\+short\+\_\+1.\+gif \char`\"{}\+Segmentation illustration\char`\"{}}
+
+\subsection*{Prerequisites}
+
+I recommend using a virtual environment in your catkin workspace ({\ttfamily $<$catkin\+\_\+ws$>$} in this readme) and will assume that you have it set up throughout this readme. Please update your commands accordingly if needed. I will be using {\ttfamily pipenv} that you can install with {\ttfamily pip}.
+
+\subsubsection*{Set up workspace and catkin}
+
+Regardless of your system you will need to do the following steps\+: 
+\begin{DoxyCode}
+cd <catkin\_ws>            # navigate to the workspace
+pipenv shell --fancy      # start a virtual environment
+pip install catkin-tools  # install catkin-tools for building
+mkdir src                 # create src dir if you don't have it already
+# Now you just need to clone the repo:
+git clone https://github.com/PRBonn/depth\_clustering src/depth\_clustering
+\end{DoxyCode}
+
+
+\subsubsection*{System requirements}
+
+You will need Open\+CV, Q\+G\+L\+Viewer, Free\+G\+L\+UT, Q\+T4 or Q\+T5 and optionally P\+CL and/or R\+OS. The following sections contain an installation command for various Ubuntu systems (click folds to expand)\+:
+
+$<$details$>$
+
+\paragraph*{Install these packages\+:}
+
+
+\begin{DoxyCode}
+sudo apt install libopencv-dev libqglviewer-dev freeglut3-dev libqt4-dev
+\end{DoxyCode}
+ $<$/details$>$
+
+$<$details$>$ 
+
+Ubuntu 16.\+04
+
+\paragraph*{Install these packages\+:}
+
+
+\begin{DoxyCode}
+sudo apt install libopencv-dev libqglviewer-dev freeglut3-dev libqt5-dev
+\end{DoxyCode}
+ $<$/details$>$
+
+$<$details$>$ 
+
+Ubuntu 18.\+04
+
+\paragraph*{Install these packages\+:}
+
+
+\begin{DoxyCode}
+sudo apt install libopencv-dev libqglviewer-dev-qt5 freeglut3-dev qtbase5-dev 
+\end{DoxyCode}
+ $<$/details$>$
+
+\subsubsection*{Optional requirements}
+
+If you want to use P\+CL clouds and/or use R\+OS for data acquisition you can install the following\+:
+\begin{DoxyItemize}
+\item (optional) P\+CL -\/ needed for saving clouds to disk
+\item (optional) R\+OS -\/ needed for subscribing to topics
+\end{DoxyItemize}
+
+\subsection*{How to build?}
+
+This is a catkin package. So we assume that the code is in a catkin workspace and C\+Make knows about the existence of Catkin. It should be already taken care of if you followed the instructions \href{#set-up-workspace-and-catkin}{\tt here}. Then you can build it from the project folder\+:
+
+
+\begin{DoxyCode}
+mkdir build
+cd build
+cmake ..
+make -j4
+ctest -VV  # run unit tests, optional
+\end{DoxyCode}
+
+
+It can also be built with {\ttfamily catkin\+\_\+tools} if the code is inside catkin workspace\+:
+
+
+\begin{DoxyCode}
+catkin build depth\_clustering
+\end{DoxyCode}
+
+
+P.\+S. in case you don\textquotesingle{}t use {\ttfamily catkin build} you \href{https://catkin-tools.readthedocs.io/en/latest/installing.html}{\tt should} reconsider your decision.
+
+\subsection*{How to run?}
+
+See \href{examples/}{\tt examples}. There are R\+OS nodes as well as standalone binaries. Examples include showing axis oriented bounding boxes around found objects (these start with {\ttfamily show\+\_\+objects\+\_\+} prefix) as well as a node to save all segments to disk. The examples should be easy to tweak for your needs.
+
+\subsection*{Run on real world data}
+
+Go to folder with binaries\+: 
+\begin{DoxyCode}
+cd <path\_to\_project>/build/devel/lib/depth\_clustering
+\end{DoxyCode}
+
+
+\paragraph*{Frank Moosmann\textquotesingle{}s \char`\"{}\+Velodyne S\+L\+A\+M\char`\"{} Dataset}
+
+Get the data\+: 
+\begin{DoxyCode}
+mkdir data/; wget http://www.mrt.kit.edu/z/publ/download/velodyneslam/data/scenario1.zip -O
+       data/moosmann.zip; unzip data/moosmann.zip -d data/; rm data/moosmann.zip
+\end{DoxyCode}
+
+
+Run a binary to show detected objects\+: 
+\begin{DoxyCode}
+./show\_objects\_moosmann --path data/scenario1/
+\end{DoxyCode}
+
+
+Alternatively, you can run the data from Qt G\+UI (as in video)\+: 
+\begin{DoxyCode}
+./qt\_gui\_app
+\end{DoxyCode}
+ Once the G\+UI is shown, click on {\ttfamily Open\+Folder} button and choose the folder where you have unpacked the {\ttfamily png} files, e.\+g. {\ttfamily data/scenario1/}. Navigate the viewer with arrows and controls seen on screen.
+
+\paragraph*{Other data}
+
+There are also examples on how to run the processing on K\+I\+T\+TI data and on R\+OS input. Follow the {\ttfamily -\/-\/help} output of each of the examples for more details.
+
+Also you can load the data from the G\+UI. Make sure you are loading files with correct extension ({\ttfamily $\ast$.txt} and {\ttfamily $\ast$.bin} for K\+I\+T\+TI, {\ttfamily $\ast$.png} for Moosmann\textquotesingle{}s data).
+
+\subsection*{Documentation}
+
+You should be able to get Doxygen documentation by running\+: 
+\begin{DoxyCode}
+cd doc/
+doxygen Doxyfile.conf
+\end{DoxyCode}
+
+
+\subsection*{Related publications}
+
+Please cite related papers if you use this code\+:
+
+
+\begin{DoxyCode}
+@InProceedings\{bogoslavskyi16iros,
+title     = \{Fast Range Image-Based Segmentation of Sparse 3D Laser Scans for Online Operation\},
+author    = \{I. Bogoslavskyi and C. Stachniss\},
+booktitle = \{Proc. of The International Conference on Intelligent Robots and Systems (IROS)\},
+year      = \{2016\},
+url       = \{http://www.ipb.uni-bonn.de/pdfs/bogoslavskyi16iros.pdf\}
+\}
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}
+@Article\{bogoslavskyi17pfg,
+title   = \{Efficient Online Segmentation for Sparse 3D Laser Scans\},
+author  = \{I. Bogoslavskyi and C. Stachniss\},
+journal = \{PFG -- Journal of Photogrammetry, Remote Sensing and Geoinformation Science\},
+year    = \{2017\},
+pages   = \{1--12\},
+url     = \{https://link.springer.com/article/10.1007%2Fs41064-016-0003-y\},
+\}
+\end{DoxyCode}
+ 

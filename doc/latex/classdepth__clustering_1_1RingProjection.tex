@@ -1,0 +1,133 @@
+\hypertarget{classdepth__clustering_1_1RingProjection}{}\section{depth\+\_\+clustering\+:\+:Ring\+Projection Class Reference}
+\label{classdepth__clustering_1_1RingProjection}\index{depth\+\_\+clustering\+::\+Ring\+Projection@{depth\+\_\+clustering\+::\+Ring\+Projection}}
+
+
+Class for ring projection.  
+
+
+
+
+{\ttfamily \#include $<$ring\+\_\+projection.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdepth__clustering_1_1RingProjection_a112958f27f57bd68a76a96fe02914d50}\label{classdepth__clustering_1_1RingProjection_a112958f27f57bd68a76a96fe02914d50}} 
+{\bfseries Ring\+Projection} (const \hyperlink{classdepth__clustering_1_1ProjectionParams}{Projection\+Params} \&params)
+\item 
+void \hyperlink{classdepth__clustering_1_1RingProjection_acfda4cfe9a0b80936987691fe44fc79c}{Init\+From\+Points} (const Rich\+Point\+::\+Aligned\+Vector \&cloud) override
+\begin{DoxyCompactList}\small\item\em Initialize from points, that have ring information in them. \end{DoxyCompactList}\item 
+Cloud\+Projection\+::\+Ptr \hyperlink{classdepth__clustering_1_1RingProjection_a433c0ee114b89b6c78ad4c471d120153}{Clone} () const override
+\begin{DoxyCompactList}\small\item\em Polymorphic clone of a projection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classdepth__clustering_1_1RichPoint}{Rich\+Point} \hyperlink{classdepth__clustering_1_1RingProjection_a16cbf43e541e65560cb282c560b4efa7}{Unproject\+Point} (const cv\+::\+Mat \&image, const int row, const int col) const override
+\begin{DoxyCompactList}\small\item\em Unproject a point from depth image coordinate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class for ring projection. 
+
+Inheritance diagram for depth\+\_\+clustering\+:\+:Ring\+Projection\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{classdepth__clustering_1_1RingProjection__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for depth\+\_\+clustering\+:\+:Ring\+Projection\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classdepth__clustering_1_1RingProjection__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classdepth__clustering_1_1RingProjection_a433c0ee114b89b6c78ad4c471d120153}\label{classdepth__clustering_1_1RingProjection_a433c0ee114b89b6c78ad4c471d120153}} 
+\index{depth\+\_\+clustering\+::\+Ring\+Projection@{depth\+\_\+clustering\+::\+Ring\+Projection}!Clone@{Clone}}
+\index{Clone@{Clone}!depth\+\_\+clustering\+::\+Ring\+Projection@{depth\+\_\+clustering\+::\+Ring\+Projection}}
+\subsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily Cloud\+Projection\+::\+Ptr depth\+\_\+clustering\+::\+Ring\+Projection\+::\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Polymorphic clone of a projection. 
+
+\begin{DoxyReturn}{Returns}
+Shared pointer of a copy of this object. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classdepth__clustering_1_1CloudProjection_ae06ff9699c1a37c535b39fa6f722fa2e}{depth\+\_\+clustering\+::\+Cloud\+Projection}.
+
+\mbox{\Hypertarget{classdepth__clustering_1_1RingProjection_acfda4cfe9a0b80936987691fe44fc79c}\label{classdepth__clustering_1_1RingProjection_acfda4cfe9a0b80936987691fe44fc79c}} 
+\index{depth\+\_\+clustering\+::\+Ring\+Projection@{depth\+\_\+clustering\+::\+Ring\+Projection}!Init\+From\+Points@{Init\+From\+Points}}
+\index{Init\+From\+Points@{Init\+From\+Points}!depth\+\_\+clustering\+::\+Ring\+Projection@{depth\+\_\+clustering\+::\+Ring\+Projection}}
+\subsubsection{\texorpdfstring{Init\+From\+Points()}{InitFromPoints()}}
+{\footnotesize\ttfamily void depth\+\_\+clustering\+::\+Ring\+Projection\+::\+Init\+From\+Points (\begin{DoxyParamCaption}\item[{const Rich\+Point\+::\+Aligned\+Vector \&}]{cloud }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Initialize from points, that have ring information in them. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em cloud} & The cloud with laser ring information \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classdepth__clustering_1_1CloudProjection_aab5fa3b7362b2c4297bf9b445ccc7ff8}{depth\+\_\+clustering\+::\+Cloud\+Projection}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classdepth__clustering_1_1RingProjection_acfda4cfe9a0b80936987691fe44fc79c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classdepth__clustering_1_1RingProjection_a16cbf43e541e65560cb282c560b4efa7}\label{classdepth__clustering_1_1RingProjection_a16cbf43e541e65560cb282c560b4efa7}} 
+\index{depth\+\_\+clustering\+::\+Ring\+Projection@{depth\+\_\+clustering\+::\+Ring\+Projection}!Unproject\+Point@{Unproject\+Point}}
+\index{Unproject\+Point@{Unproject\+Point}!depth\+\_\+clustering\+::\+Ring\+Projection@{depth\+\_\+clustering\+::\+Ring\+Projection}}
+\subsubsection{\texorpdfstring{Unproject\+Point()}{UnprojectPoint()}}
+{\footnotesize\ttfamily \hyperlink{classdepth__clustering_1_1RichPoint}{Rich\+Point} depth\+\_\+clustering\+::\+Ring\+Projection\+::\+Unproject\+Point (\begin{DoxyParamCaption}\item[{const cv\+::\+Mat \&}]{image,  }\item[{const int}]{row,  }\item[{const int}]{col }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Unproject a point from depth image coordinate. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em image} & A depth image \\
+\hline
+\mbox{\tt in}  & {\em row} & A row in the image \\
+\hline
+\mbox{\tt in}  & {\em col} & A col in the image\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{ description\+\_\+of\+\_\+the\+\_\+return\+\_\+value \} 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classdepth__clustering_1_1CloudProjection_ab552ac1dbb56e077679d9f0268c79a44}{depth\+\_\+clustering\+::\+Cloud\+Projection}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classdepth__clustering_1_1RingProjection_a16cbf43e541e65560cb282c560b4efa7_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/ashwin/catkin\+\_\+ws/src/depth\+\_\+clustering/src/projections/ring\+\_\+projection.\+h\item 
+/home/ashwin/catkin\+\_\+ws/src/depth\+\_\+clustering/src/projections/ring\+\_\+projection.\+cpp\end{DoxyCompactItemize}

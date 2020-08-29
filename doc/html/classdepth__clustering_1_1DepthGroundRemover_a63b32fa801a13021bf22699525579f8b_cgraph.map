@@ -1,0 +1,4 @@
+<map id="depth_clustering::DepthGroundRemover::ApplySavitskyGolaySmoothing" name="depth_clustering::DepthGroundRemover::ApplySavitskyGolaySmoothing">
+<area shape="rect" id="node2" href="$classdepth__clustering_1_1DepthGroundRemover.html#a2aeaac524f19861b26c171d845f67e2e" title="Get kernel for Savitsky&#45;Golay filter. " alt="" coords="316,5,543,47"/>
+<area shape="rect" id="node3" href="$classdepth__clustering_1_1AbstractSender.html#a6120bda97c12587db40f34ed73b45475" title="Gets type of sender as string. " alt="" coords="591,5,765,47"/>
+</map>

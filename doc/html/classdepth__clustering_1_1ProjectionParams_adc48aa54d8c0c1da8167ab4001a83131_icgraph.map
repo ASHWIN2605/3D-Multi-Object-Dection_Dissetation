@@ -1,0 +1,9 @@
+<map id="depth_clustering::ProjectionParams::AngleFromRow" name="depth_clustering::ProjectionParams::AngleFromRow">
+<area shape="rect" id="node2" href="$classdepth__clustering_1_1DepthGroundRemover.html#a29ba07a101794aab322ae3c0671806e0" title="Get line angle. " alt="" coords="267,5,469,47"/>
+<area shape="rect" id="node3" href="$classdepth__clustering_1_1AngleDiff.html#ac9bd0ec61ff0b213fd19235dc171c1c2" title="Compute angle&#45;based difference. See paper for details. " alt="" coords="279,71,457,112"/>
+<area shape="rect" id="node4" href="$classdepth__clustering_1_1AngleDiffPrecomputed.html#a8f333b5196e9dcaa7923f82d362c7281" title="Pre&#45;compute values for angles for all cols and rows. " alt="" coords="247,136,489,177"/>
+<area shape="rect" id="node6" href="$classdepth__clustering_1_1LineDistDiff.html#a839eee44b14de26d85e6dbad5e37b356" title="Compute angle&#45;based difference. See paper for details. " alt="" coords="281,201,455,243"/>
+<area shape="rect" id="node7" href="$classdepth__clustering_1_1LineDistDiffPrecomputed.html#a9e52e2a94d9f92567953a765475d62a0" title="Pre&#45;compute values for angles for all cols and rows. " alt="" coords="236,267,500,308"/>
+<area shape="rect" id="node5" href="$classdepth__clustering_1_1AngleDiffPrecomputed.html#a0cd5a0071d191d6a4f3594a789777ff3" title="Precompute the angles to avoid losing time on that. " alt="" coords="566,136,805,177"/>
+<area shape="rect" id="node8" href="$classdepth__clustering_1_1LineDistDiffPrecomputed.html#a035909e1718ad9b54b9b4116bbb6c408" title="Precompute the angles to avoid losing time on that. " alt="" coords="548,267,823,308"/>
+</map>

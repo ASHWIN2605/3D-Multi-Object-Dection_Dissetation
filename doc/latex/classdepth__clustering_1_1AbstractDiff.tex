@@ -1,0 +1,161 @@
+\hypertarget{classdepth__clustering_1_1AbstractDiff}{}\section{depth\+\_\+clustering\+:\+:Abstract\+Diff Class Reference}
+\label{classdepth__clustering_1_1AbstractDiff}\index{depth\+\_\+clustering\+::\+Abstract\+Diff@{depth\+\_\+clustering\+::\+Abstract\+Diff}}
+
+
+Class for abstract difference.  
+
+
+
+
+{\ttfamily \#include $<$abstract\+\_\+diff.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classdepth__clustering_1_1AbstractDiff_a14160500db5c2c1c1948a9e563318cc8}{Abstract\+Diff} (const cv\+::\+Mat $\ast$source\+\_\+image)
+\begin{DoxyCompactList}\small\item\em construct a class with a source image pointer \end{DoxyCompactList}\item 
+virtual float \hyperlink{classdepth__clustering_1_1AbstractDiff_a06ba188d8d83d0e4bad66c833656c26d}{Diff\+At} (const \hyperlink{structdepth__clustering_1_1PixelCoord}{Pixel\+Coord} \&from, const \hyperlink{structdepth__clustering_1_1PixelCoord}{Pixel\+Coord} \&to) const =0
+\begin{DoxyCompactList}\small\item\em Gets diff between pixels from and to. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classdepth__clustering_1_1AbstractDiff_a940280569ed86d8f7e95626b1a2312d7}{Satisfies\+Threshold} (float value, float threshold) const =0
+\begin{DoxyCompactList}\small\item\em Does the difference satisfy a threshold? \end{DoxyCompactList}\item 
+virtual cv\+::\+Mat \hyperlink{classdepth__clustering_1_1AbstractDiff_a45314bf711f35e53590af28bdfc45313}{Visualize} () const
+\begin{DoxyCompactList}\small\item\em Visualize the differences as a color image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdepth__clustering_1_1AbstractDiff_ac554e78b6f29341d1361a8ec6932698a}\label{classdepth__clustering_1_1AbstractDiff_ac554e78b6f29341d1361a8ec6932698a}} 
+const cv\+::\+Mat $\ast$ {\bfseries \+\_\+source\+\_\+image} = nullptr
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for abstract difference. 
+
+Inheritance diagram for depth\+\_\+clustering\+:\+:Abstract\+Diff\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classdepth__clustering_1_1AbstractDiff__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for depth\+\_\+clustering\+:\+:Abstract\+Diff\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classdepth__clustering_1_1AbstractDiff__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdepth__clustering_1_1AbstractDiff_a14160500db5c2c1c1948a9e563318cc8}\label{classdepth__clustering_1_1AbstractDiff_a14160500db5c2c1c1948a9e563318cc8}} 
+\index{depth\+\_\+clustering\+::\+Abstract\+Diff@{depth\+\_\+clustering\+::\+Abstract\+Diff}!Abstract\+Diff@{Abstract\+Diff}}
+\index{Abstract\+Diff@{Abstract\+Diff}!depth\+\_\+clustering\+::\+Abstract\+Diff@{depth\+\_\+clustering\+::\+Abstract\+Diff}}
+\subsubsection{\texorpdfstring{Abstract\+Diff()}{AbstractDiff()}}
+{\footnotesize\ttfamily depth\+\_\+clustering\+::\+Abstract\+Diff\+::\+Abstract\+Diff (\begin{DoxyParamCaption}\item[{const cv\+::\+Mat $\ast$}]{source\+\_\+image }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+construct a class with a source image pointer 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em source\+\_\+image} & The source image pointer (C\+V\+\_\+32F type Mat) \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classdepth__clustering_1_1AbstractDiff_a14160500db5c2c1c1948a9e563318cc8_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classdepth__clustering_1_1AbstractDiff_a06ba188d8d83d0e4bad66c833656c26d}\label{classdepth__clustering_1_1AbstractDiff_a06ba188d8d83d0e4bad66c833656c26d}} 
+\index{depth\+\_\+clustering\+::\+Abstract\+Diff@{depth\+\_\+clustering\+::\+Abstract\+Diff}!Diff\+At@{Diff\+At}}
+\index{Diff\+At@{Diff\+At}!depth\+\_\+clustering\+::\+Abstract\+Diff@{depth\+\_\+clustering\+::\+Abstract\+Diff}}
+\subsubsection{\texorpdfstring{Diff\+At()}{DiffAt()}}
+{\footnotesize\ttfamily virtual float depth\+\_\+clustering\+::\+Abstract\+Diff\+::\+Diff\+At (\begin{DoxyParamCaption}\item[{const \hyperlink{structdepth__clustering_1_1PixelCoord}{Pixel\+Coord} \&}]{from,  }\item[{const \hyperlink{structdepth__clustering_1_1PixelCoord}{Pixel\+Coord} \&}]{to }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets diff between pixels from and to. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em from} & pixel from which we want difference \\
+\hline
+\mbox{\tt in}  & {\em to} & pixel to which we want difference\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+difference between the pixels 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classdepth__clustering_1_1LineDistDiffPrecomputed_ac505afaa537656af1bcc342ab1e910c4}{depth\+\_\+clustering\+::\+Line\+Dist\+Diff\+Precomputed}, \hyperlink{classdepth__clustering_1_1AngleDiffPrecomputed_ae15bb5fc9488ae2b26c77665931b8626}{depth\+\_\+clustering\+::\+Angle\+Diff\+Precomputed}, \hyperlink{classdepth__clustering_1_1LineDistDiff_a839eee44b14de26d85e6dbad5e37b356}{depth\+\_\+clustering\+::\+Line\+Dist\+Diff}, \hyperlink{classdepth__clustering_1_1AngleDiff_ac9bd0ec61ff0b213fd19235dc171c1c2}{depth\+\_\+clustering\+::\+Angle\+Diff}, and \hyperlink{classdepth__clustering_1_1SimpleDiff_a3afe28bd6a9cfbaff18e856a04d24824}{depth\+\_\+clustering\+::\+Simple\+Diff}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classdepth__clustering_1_1AbstractDiff_a06ba188d8d83d0e4bad66c833656c26d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classdepth__clustering_1_1AbstractDiff_a940280569ed86d8f7e95626b1a2312d7}\label{classdepth__clustering_1_1AbstractDiff_a940280569ed86d8f7e95626b1a2312d7}} 
+\index{depth\+\_\+clustering\+::\+Abstract\+Diff@{depth\+\_\+clustering\+::\+Abstract\+Diff}!Satisfies\+Threshold@{Satisfies\+Threshold}}
+\index{Satisfies\+Threshold@{Satisfies\+Threshold}!depth\+\_\+clustering\+::\+Abstract\+Diff@{depth\+\_\+clustering\+::\+Abstract\+Diff}}
+\subsubsection{\texorpdfstring{Satisfies\+Threshold()}{SatisfiesThreshold()}}
+{\footnotesize\ttfamily virtual bool depth\+\_\+clustering\+::\+Abstract\+Diff\+::\+Satisfies\+Threshold (\begin{DoxyParamCaption}\item[{float}]{value,  }\item[{float}]{threshold }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Does the difference satisfy a threshold? 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em value} & Query value \\
+\hline
+\mbox{\tt in}  & {\em threshold} & The threshold\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if satisfies, false, otherwise 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classdepth__clustering_1_1LineDistDiffPrecomputed_ac3ce8196d5e6f49f3e3bdc3e3b32b033}{depth\+\_\+clustering\+::\+Line\+Dist\+Diff\+Precomputed}, \hyperlink{classdepth__clustering_1_1AngleDiffPrecomputed_a28a32c0cb0405163fe237909fe5f6c0c}{depth\+\_\+clustering\+::\+Angle\+Diff\+Precomputed}, \hyperlink{classdepth__clustering_1_1LineDistDiff_ae9debede2cffd6bb40ca4c4a82c52f61}{depth\+\_\+clustering\+::\+Line\+Dist\+Diff}, \hyperlink{classdepth__clustering_1_1AngleDiff_ac65e8f42b1f2ac82db14ebe188c004a2}{depth\+\_\+clustering\+::\+Angle\+Diff}, and \hyperlink{classdepth__clustering_1_1SimpleDiff_a277c862d4ffdf1bfc24bd1bd70cb98a7}{depth\+\_\+clustering\+::\+Simple\+Diff}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classdepth__clustering_1_1AbstractDiff_a940280569ed86d8f7e95626b1a2312d7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classdepth__clustering_1_1AbstractDiff_a45314bf711f35e53590af28bdfc45313}\label{classdepth__clustering_1_1AbstractDiff_a45314bf711f35e53590af28bdfc45313}} 
+\index{depth\+\_\+clustering\+::\+Abstract\+Diff@{depth\+\_\+clustering\+::\+Abstract\+Diff}!Visualize@{Visualize}}
+\index{Visualize@{Visualize}!depth\+\_\+clustering\+::\+Abstract\+Diff@{depth\+\_\+clustering\+::\+Abstract\+Diff}}
+\subsubsection{\texorpdfstring{Visualize()}{Visualize()}}
+{\footnotesize\ttfamily virtual cv\+::\+Mat depth\+\_\+clustering\+::\+Abstract\+Diff\+::\+Visualize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Visualize the differences as a color image. 
+
+\begin{DoxyReturn}{Returns}
+Open\+CV Mat of type C\+V\+\_\+8\+U\+C3 to visualize differences in color. 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classdepth__clustering_1_1LineDistDiffPrecomputed_a77c9cf3bea954f13cd2fef4f8a182425}{depth\+\_\+clustering\+::\+Line\+Dist\+Diff\+Precomputed}, \hyperlink{classdepth__clustering_1_1AngleDiffPrecomputed_a2fd85404d06843af0ee5c713017f6641}{depth\+\_\+clustering\+::\+Angle\+Diff\+Precomputed}, \hyperlink{classdepth__clustering_1_1LineDistDiff_a7feaf820589ccfb47786d5124a74d725}{depth\+\_\+clustering\+::\+Line\+Dist\+Diff}, and \hyperlink{classdepth__clustering_1_1AngleDiff_a462e4aadd35ca06e9b061d08c9787074}{depth\+\_\+clustering\+::\+Angle\+Diff}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ashwin/catkin\+\_\+ws/src/depth\+\_\+clustering/src/image\+\_\+labelers/diff\+\_\+helpers/abstract\+\_\+diff.\+h\end{DoxyCompactItemize}

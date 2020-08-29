@@ -1,0 +1,5 @@
+<map id="depth_clustering::AbstractDiff::DiffAt" name="depth_clustering::AbstractDiff::DiffAt">
+<area shape="rect" id="node2" href="$classdepth__clustering_1_1AbstractDiff.html#a14160500db5c2c1c1948a9e563318cc8" title="construct a class with a source image pointer " alt="" coords="256,5,431,47"/>
+<area shape="rect" id="node3" href="$classdepth__clustering_1_1LinearImageLabeler.html#ac5544f26628a05978a6a989ade6a1cd6" title="Label a single connected component with BFS. Can be done faster if we augment the queue with a hash o..." alt="" coords="228,71,459,112"/>
+<area shape="rect" id="node4" href="$classdepth__clustering_1_1LinearImageLabeler.html#a987cca7d9daab304af4bcc448bf6de0f" title="Calculates the labels running over the whole image. " alt="" coords="507,71,705,112"/>
+</map>

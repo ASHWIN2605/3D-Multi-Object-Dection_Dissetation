@@ -1,0 +1,11 @@
+<map id="depth_clustering::AbstractSender&lt; ObjSendType &gt;" name="depth_clustering::AbstractSender&lt; ObjSendType &gt;">
+<area shape="rect" id="node3" href="$classdepth__clustering_1_1AbstractSender.html" title="{depth_clustering::Abstract\lSender\&lt; Cloud \&gt;\n|# _clients\l# _type\l|+ AbstractSender()\l+ ~AbstractSender()\l+ type()\l+ AddClient()\l+ RemoveClient()\l+ RemoveClient()\l+ client_count()\l+ ShareDataWithAllClients()\l}" alt="" coords="252,514,439,723"/>
+<area shape="rect" id="node6" href="$classdepth__clustering_1_1AbstractSender.html" title="{depth_clustering::Abstract\lSender\&lt; std::unordered\l_map\&lt; uint16_t, Cloud \&gt; \&gt;\n|# _clients\l# _type\l|+ AbstractSender()\l+ ~AbstractSender()\l+ type()\l+ AddClient()\l+ RemoveClient()\l+ RemoveClient()\l+ client_count()\l+ ShareDataWithAllClients()\l}" alt="" coords="468,507,655,731"/>
+<area shape="rect" id="node2" href="$classdepth__clustering_1_1Identifiable.html" title="Class for identifiable. " alt="" coords="357,5,545,171"/>
+<area shape="rect" id="node4" href="$classdepth__clustering_1_1CloudOdomRosSubscriber.html" title="Class for cloud odom ros subscriber. " alt="" coords="5,795,211,1077"/>
+<area shape="rect" id="node5" href="$classdepth__clustering_1_1DepthGroundRemover.html" title="A class to remove ground based upon depth image. " alt="" coords="235,780,456,1092"/>
+<area shape="rect" id="node7" href="$classdepth__clustering_1_1AbstractClusterer.html" title="Class for abstract clusterer. " alt="" coords="481,853,655,1019"/>
+<area shape="rect" id="node8" href="$classdepth__clustering_1_1EuclideanClusterer.html" title="Class for euclidean clustering. " alt="" coords="262,1156,445,1277"/>
+<area shape="rect" id="node9" href="$classdepth__clustering_1_1ImageBasedClusterer.html" title="Class for image based clusterer. " alt="" coords="469,1141,667,1292"/>
+<area shape="rect" id="node10" href="$classdepth__clustering_1_1ImageBasedClusterer.html" title="{depth_clustering::ImageBased\lClusterer\&lt; depth_clustering\l::LinearImageLabeler\&lt;\&gt; \&gt;\n||+ ImageBasedClusterer()\l+ ~ImageBasedClusterer()\l+ SetDiffType()\l+ SetLabelImageClient()\l+ OnNewObjectReceived()\l}" alt="" coords="537,1369,735,1535"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="depth_clustering::CloudOdomRosSubscriber" name="depth_clustering::CloudOdomRosSubscriber">
+<area shape="rect" id="node2" href="$classdepth__clustering_1_1AbstractSender.html" title="{depth_clustering::Abstract\lSender\&lt; Cloud \&gt;\n|# _clients\l# _type\l|+ AbstractSender()\l+ ~AbstractSender()\l+ type()\l+ AddClient()\l+ RemoveClient()\l+ RemoveClient()\l+ client_count()\l+ ShareDataWithAllClients()\l}" alt="" coords="15,492,201,701"/>
+<area shape="rect" id="node3" href="$classdepth__clustering_1_1Identifiable.html" title="Class for identifiable. " alt="" coords="9,5,197,171"/>
+<area shape="rect" id="node4" href="$classdepth__clustering_1_1AbstractSender.html" title="Class for abstract sender. " alt="" coords="124,220,311,429"/>
+</map>

@@ -1,0 +1,83 @@
+\hypertarget{classdepth__clustering_1_1EuclideanClusterer}{}\section{depth\+\_\+clustering\+:\+:Euclidean\+Clusterer Class Reference}
+\label{classdepth__clustering_1_1EuclideanClusterer}\index{depth\+\_\+clustering\+::\+Euclidean\+Clusterer@{depth\+\_\+clustering\+::\+Euclidean\+Clusterer}}
+
+
+Class for euclidean clustering.  
+
+
+
+
+{\ttfamily \#include $<$euclidean\+\_\+clusterer.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdepth__clustering_1_1EuclideanClusterer_a7c8df2531faab16c7156087cd62d31ca}\label{classdepth__clustering_1_1EuclideanClusterer_a7c8df2531faab16c7156087cd62d31ca}} 
+using {\bfseries PointT} = pcl\+::\+Point\+X\+Y\+ZL
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdepth__clustering_1_1EuclideanClusterer_a1c8b10d1977bf4c1f463d2f1942526df}\label{classdepth__clustering_1_1EuclideanClusterer_a1c8b10d1977bf4c1f463d2f1942526df}} 
+{\bfseries Euclidean\+Clusterer} (double cluster\+\_\+tollerance=0.\+2, uint16\+\_\+t min\+\_\+cluster\+\_\+size=100, uint16\+\_\+t max\+\_\+cluster\+\_\+size=25000, uint16\+\_\+t skip=10)
+\item 
+void \hyperlink{classdepth__clustering_1_1EuclideanClusterer_a8ebdd098c514a05f17f16070255b27a6}{On\+New\+Object\+Received} (const \hyperlink{classdepth__clustering_1_1Cloud}{Cloud} \&cloud, const int sender\+\_\+id) override
+\begin{DoxyCompactList}\small\item\em Gets called when somebody sends this client an object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class for euclidean clustering. 
+
+Inheritance diagram for depth\+\_\+clustering\+:\+:Euclidean\+Clusterer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classdepth__clustering_1_1EuclideanClusterer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for depth\+\_\+clustering\+:\+:Euclidean\+Clusterer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classdepth__clustering_1_1EuclideanClusterer__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classdepth__clustering_1_1EuclideanClusterer_a8ebdd098c514a05f17f16070255b27a6}\label{classdepth__clustering_1_1EuclideanClusterer_a8ebdd098c514a05f17f16070255b27a6}} 
+\index{depth\+\_\+clustering\+::\+Euclidean\+Clusterer@{depth\+\_\+clustering\+::\+Euclidean\+Clusterer}!On\+New\+Object\+Received@{On\+New\+Object\+Received}}
+\index{On\+New\+Object\+Received@{On\+New\+Object\+Received}!depth\+\_\+clustering\+::\+Euclidean\+Clusterer@{depth\+\_\+clustering\+::\+Euclidean\+Clusterer}}
+\subsubsection{\texorpdfstring{On\+New\+Object\+Received()}{OnNewObjectReceived()}}
+{\footnotesize\ttfamily void depth\+\_\+clustering\+::\+Euclidean\+Clusterer\+::\+On\+New\+Object\+Received (\begin{DoxyParamCaption}\item[{const \hyperlink{classdepth__clustering_1_1Cloud}{Cloud} \&}]{cloud,  }\item[{const int}]{sender\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets called when somebody sends this client an object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em cloud} & The cloud to cluster \\
+\hline
+\mbox{\tt in}  & {\em sender\+\_\+id} & The sender identifier \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classdepth__clustering_1_1AbstractClient}{depth\+\_\+clustering\+::\+Abstract\+Client$<$ Cloud $>$}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classdepth__clustering_1_1EuclideanClusterer_a8ebdd098c514a05f17f16070255b27a6_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ashwin/catkin\+\_\+ws/src/depth\+\_\+clustering/src/clusterers/euclidean\+\_\+clusterer.\+h\end{DoxyCompactItemize}

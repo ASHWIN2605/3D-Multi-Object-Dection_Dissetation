@@ -1,0 +1,4 @@
+<map id="depth_clustering::AngleDiffPrecomputed::GetBeta" name="depth_clustering::AngleDiffPrecomputed::GetBeta">
+<area shape="rect" id="node2" href="$classdepth__clustering_1_1AngleDiffPrecomputed.html#aeb86ee61c6e8fc1b5b554368b1f5fa27" title="Precompute all &#160;angles for the image. It generates two matrices for row&#45;wise and col&#45;wise angles..." alt="" coords="232,5,479,47"/>
+<area shape="rect" id="node3" href="$classdepth__clustering_1_1AngleDiffPrecomputed.html#a0cd5a0071d191d6a4f3594a789777ff3" title="Precompute the angles to avoid losing time on that. " alt="" coords="527,5,765,47"/>
+</map>

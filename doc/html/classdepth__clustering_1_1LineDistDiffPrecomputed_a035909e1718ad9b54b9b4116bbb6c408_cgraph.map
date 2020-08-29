@@ -1,0 +1,7 @@
+<map id="depth_clustering::LineDistDiffPrecomputed::LineDistDiffPrecomputed" name="depth_clustering::LineDistDiffPrecomputed::LineDistDiffPrecomputed">
+<area shape="rect" id="node2" href="$classdepth__clustering_1_1LineDistDiffPrecomputed.html#a9e52e2a94d9f92567953a765475d62a0" title="Pre&#45;compute values for angles for all cols and rows. " alt="" coords="328,71,592,112"/>
+<area shape="rect" id="node5" href="$classdepth__clustering_1_1LineDistDiffPrecomputed.html#a9d0211af30be1f60ef4e8db570128a7b" title="Precompute all &#160;angles for the image. It generates two matrices for row&#45;wise and col&#45;wise angles..." alt="" coords="332,136,588,177"/>
+<area shape="rect" id="node3" href="$classdepth__clustering_1_1ProjectionParams.html#adc48aa54d8c0c1da8167ab4001a83131" title="Get angle from row. " alt="" coords="647,5,830,47"/>
+<area shape="rect" id="node4" href="$classdepth__clustering_1_1ProjectionParams.html#aa5cf587adef5383e263a4e9a20de50ff" title="Get angle from col. " alt="" coords="647,71,830,112"/>
+<area shape="rect" id="node6" href="$classdepth__clustering_1_1LineDistDiffPrecomputed.html#a2725113f6eb03b937104f325adf0c7aa" title="Compute the angle &#160;of incline of the line spawned by two given beams. " alt="" coords="640,136,837,177"/>
+</map>

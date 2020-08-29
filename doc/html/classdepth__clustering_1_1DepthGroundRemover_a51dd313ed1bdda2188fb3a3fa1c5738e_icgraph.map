@@ -1,0 +1,4 @@
+<map id="depth_clustering::DepthGroundRemover::RepairDepth" name="depth_clustering::DepthGroundRemover::RepairDepth">
+<area shape="rect" id="node2" href="$classdepth__clustering_1_1DepthGroundRemover.html#ab2c3bcc8df6cc70ad5057f5ec3bd074f" title="when someone sends us an object we process it " alt="" coords="256,5,476,47"/>
+<area shape="rect" id="node3" href="$classdepth__clustering_1_1DepthGroundRemover.html#a81aa3a52c70223555b4f4e1800e05022" title="Zero out all pixels that belong to ground. " alt="" coords="265,71,467,112"/>
+</map>
