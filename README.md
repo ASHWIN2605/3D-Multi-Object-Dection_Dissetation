@@ -28,7 +28,7 @@ Installation of Catkin can be found in the following link:
 http://wiki.ros.org/catkin
 
 ### Set up workspace and catkin ###
-
+'''
 cd <catkin_ws>            # navigate to the workspace
 pipenv shell --Obj_Det      # start a virtual environment(Optional)
 pip install catkin-tools  # install catkin-tools for building
@@ -36,6 +36,7 @@ mkdir src                 # create src dir if you don't have it already
 cd src			# Navigate to src
 #Clone the repository
 git clone https://github.com/ASHWIN2605/3D-Multi-Object-Dection_Dissetation.git
+'''
 
 ### System requirements ###
 
